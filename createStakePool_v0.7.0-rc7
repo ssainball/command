@@ -74,7 +74,8 @@ jcli transaction make-witness ${TRANSACTION_ID} \
 
 
 jcli transaction add-witness ${WITNESS_OUTPUT_FILE} --staging "${STAGING_FILE}"
-jcli transaction info --fee-constant ${FEE_CONSTANT} --fee-coefficient ${FEE_COEFFICIENT} --fee-certificate ${FEE_CERTIFICATE} --staging "${STAGING_FILE}"
+jcli transaction info --fee-constant ${FEE_CONSTANT} --fee-coefficient ${FEE_COEFFICIENT} --fee-certificate ${FEE_CERTIFICATE} \
+    --staging "${STAGING_FILE}"
 jcli transaction seal --staging "${STAGING_FILE}"
 jcli transaction auth -k "${WITNESS_SECRET_FILE}" --staging "${STAGING_FILE}"
 jcli transaction to-message --staging "${STAGING_FILE}" | jcli rest v0 message post -h "${REST_URL}"
