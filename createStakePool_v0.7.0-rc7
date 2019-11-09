@@ -83,3 +83,5 @@ jcli transaction to-message --staging "${STAGING_FILE}" | jcli rest v0 message p
 
 
 rm ${STAGING_FILE} ${WITNESS_SECRET_FILE} ${WITNESS_OUTPUT_FILE}
+
+
