@@ -1,1 +1,1 @@
-# scripts
+# Linux command of Cardano Shelly
