@@ -1,1 +1,1 @@
-# Linux command of Cardano Shelly
+# Linux command of Cardano Shelley
